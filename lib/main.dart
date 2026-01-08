@@ -13,8 +13,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-        title: "DataFloat Test",
-        initialRoute: AppRoutes.fashionScreen,
+        title: "Iroid Test",
+        initialRoute: AppRoutes.splashScreen,
         getPages: AppPages.pages,
         debugShowCheckedModeBanner: false,
        

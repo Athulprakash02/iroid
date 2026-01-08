@@ -9,4 +9,7 @@ class AppUrl {
   // connectTimeout
   static const int connectionTimeout = 30000;
 
+
+   static const String fashion = 'fashion';
+
 }

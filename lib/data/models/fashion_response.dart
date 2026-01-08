@@ -1,12 +1,12 @@
 class FashionResponse {
   String? status;
-  Data? data;
+  FashionData? data;
 
   FashionResponse({this.status, this.data});
 
   FashionResponse.fromJson(Map<String, dynamic> json) {
     status = json['status'];
-    data = json['data'] != null ? new Data.fromJson(json['data']) : null;
+    data = json['data'] != null ? new FashionData.fromJson(json['data']) : null;
   }
 
   Map<String, dynamic> toJson() {
@@ -19,7 +19,7 @@ class FashionResponse {
   }
 }
 
-class Data {
+class FashionData {
   TailorNearYou? tailorNearYou;
   DesignsByArya? designsByArya;
   MostPopular? mostPopular;
@@ -30,7 +30,7 @@ class Data {
   MostPopular? topSaled2;
   Lehenga? friendlyFloral;
 
-  Data(
+  FashionData(
       {this.tailorNearYou,
       this.designsByArya,
       this.mostPopular,
@@ -41,7 +41,7 @@ class Data {
       this.topSaled2,
       this.friendlyFloral});
 
-  Data.fromJson(Map<String, dynamic> json) {
+  FashionData.fromJson(Map<String, dynamic> json) {
     tailorNearYou = json['tailor_near_you'] != null
         ? new TailorNearYou.fromJson(json['tailor_near_you'])
         : null;
